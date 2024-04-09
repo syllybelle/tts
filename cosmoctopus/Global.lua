@@ -1,20 +1,6 @@
---[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]
----- table indexing ref:
--- > t = {}
--- > t.foo = 123 -- same as t["foo"] (but not t[foo], which would use the variable foo as the key)
--- > = t.foo
--- 123
--- > = t["foo"]
--- 123
-
--- > t = {foo = "bar"} -- same as ["foo"]="bar" (but not [foo]="bar" , that would use the variable foo)
--- > = t["foo"]
--- bar
-
---> t = {["foo"] = "bar"}
---> = t.foo
--- bar
-
+--[[ TTS documentation: https://api.tabletopsimulator.com/ ]]
+--todo: add reset button
+--todo: add proper turns management
 
 -- tags
 card_zone_tag   = "card_holder"
