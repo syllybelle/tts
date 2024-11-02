@@ -220,10 +220,6 @@ objects = {
     [player_ref_card_B] = nil,
     [player_ref_card_C] = nil,
     [player_ref_card_D] = nil,
-    [purple_board_zone] = nil,
-    [green_board_zone] = nil,
-    [red_board_zone] = nil,
-    [blue_board_zone] = nil,
     [purple_board] = nil,
     [green_board] = nil,
     [red_board] = nil,
@@ -289,7 +285,39 @@ objects = {
     [blue_minus_whisper] = nil,
     [blue_plus_whisper] = nil,
     [blue_minus_star] = nil,
-    [blue_plus_star] = nil
+    [blue_plus_star] = nil,
+
+    [purple_board_frame] = nil,
+    [green_board_frame] = nil,
+    [red_board_frame] = nil,
+    [blue_board_frame] = nil,
+
+    [purple_rule_book]          = nil,
+    [green_rule_book]           = nil,
+    [red_rule_book]             = nil,
+    [blue_rule_book]            = nil,
+   
+    [purple_bowl_ink]            =nil,
+    [purple_bowl_coin]           =nil,
+    [purple_bowl_whisper]        =nil,
+    [purple_bowl_star]           =nil,
+     
+    [green_bowl_ink]             =nil,
+    [green_bowl_coin]            =nil,
+    [green_bowl_whisper]         =nil,
+    [green_bowl_star]            =nil,
+     
+    [red_bowl_ink]               =nil,
+    [red_bowl_coin]              =nil,
+    [red_bowl_whisper]           =nil,
+    [red_bowl_star]              =nil,
+     
+    [blue_bowl_ink]              =nil,
+    [blue_bowl_coin]             =nil,
+    [blue_bowl_whisper]          =nil,
+    [blue_bowl_star]             =nil
+
+
 }
 
 object_ids = {
@@ -355,7 +383,7 @@ object_ids = {
     [first_contact_card_whispers] = "2ea49b",
     [first_contact_card_stars]  = "3d71d7",
 
-    [purple_board]              = "0bc026",
+    [purple_board]              = "1aa2f9",
     [green_board]               = "cfd4c1",
     [red_board]                 = "f90dcf",
     [blue_board]                = "5b3641",
@@ -400,7 +428,7 @@ object_ids = {
     [blue_bowl_whisper]         ="217ae3",
     [blue_bowl_star]            ="3fb1bd",
 
-    [purple_minus_ink]      = "1aa2f9",
+    [purple_minus_ink]      = "7b36cc",
     [purple_plus_ink]       = "2fe0e4",
     [purple_minus_coin]     = "01f214",
     [purple_plus_coin]      = "cacc6b",
@@ -422,10 +450,10 @@ object_ids = {
     [red_plus_ink]          = "9c9c0c",
     [red_minus_coin]        = "9210b6",
     [red_plus_coin]         = "263dd9",
-    [red_minus_whisper]     = "f90dcf",
+    [red_minus_whisper]     = "95d6f6",
     [red_plus_whisper]      = "e61a92",
     [red_minus_star]        = "cf1c18",
-    [red_plus_star]         = "f90dcf",
+    [red_plus_star]         = "58ec82",
 
     [blue_minus_ink]        = "e5e471",
     [blue_plus_ink]         = "b7b7f1",
@@ -434,131 +462,131 @@ object_ids = {
     [blue_minus_whisper]    = "21c7f9",
     [blue_plus_whisper]     = "e5a5a9",
     [blue_minus_star]       = "d0af18",
-    [blue_plus_star]        = "5b3641"
+    [blue_plus_star]        = "a51db7"
 
 }
 
--- hidden_objects = {
---     devotee_deck,
---     devotee_ref_deck,
---     inky_realm_tile_bag,
---     special_inky_realm_tile_bag,
---     cosmoctopus,
---     cosmic_bridge_token_1,
---     cosmic_bridge_token_2,
---     generic_resource_token_1,
---     generic_resource_token_2,
---     generic_resource_token_3,
---     ink_bag,
---     coin_bag,
---     whisper_bag,
---     star_bag,
---     tentacle_bag,
---     starting_deck_A,
---     starting_deck_B,
---     starting_deck_C,
---     starting_deck_D,
---     forbidden_knowledge_ink,
---     forbidden_knowledge_coins,
---     forbidden_knowledge_whispers,
---     forbidden_knowledge_stars,
---     first_contact_card_ink,
---     first_contact_card_coins,
---     first_contact_card_whispers,
---     first_contact_card_stars
+hidden_objects = {
+    devotee_deck,
+    devotee_ref_deck,
+    inky_realm_tile_bag,
+    special_inky_realm_tile_bag,
+    cosmoctopus,
+    cosmic_bridge_token_1,
+    cosmic_bridge_token_2,
+    generic_resource_token_1,
+    generic_resource_token_2,
+    generic_resource_token_3,
+    ink_bag,
+    coin_bag,
+    whisper_bag,
+    star_bag,
+    tentacle_bag,
+    starting_deck_A,
+    starting_deck_B,
+    starting_deck_C,
+    starting_deck_D,
+    forbidden_knowledge_ink,
+    forbidden_knowledge_coins,
+    forbidden_knowledge_whispers,
+    forbidden_knowledge_stars,
+    first_contact_card_ink,
+    first_contact_card_coins,
+    first_contact_card_whispers,
+    first_contact_card_stars
 
--- }
+}
 
--- pi_objects = {
---     magnifying_glass_1,
---     magnifying_glass_2,
---     pi_behaviour_deck,
---     pi_revelation_cards,
---     pi_tentacle,
---     pi_tentacle_tracker_card,
---     pi_ink_placeholder,
---     pi_coins_placeholder,
---     pi_whispers_placeholder,
---     pi_stars_placeholder,
---     pi_hand
--- }
+pi_objects = {
+    magnifying_glass_1,
+    magnifying_glass_2,
+    pi_behaviour_deck,
+    pi_revelation_cards,
+    pi_tentacle,
+    pi_tentacle_tracker_card,
+    pi_ink_placeholder,
+    pi_coins_placeholder,
+    pi_whispers_placeholder,
+    pi_stars_placeholder,
+    pi_hand
+}
 
--- purple_objects = {
---     purple_board,
---     purple_board_frame,
---     purple_bin,
---     purple_rule_book,
---     purple_bowl_ink,
---     purple_bowl_coin,
---     purple_bowl_whisper,
---     purple_bowl_star,
---     purple_minus_ink,
---     purple_plus_ink,
---     purple_minus_coin,
---     purple_plus_coin,
---     purple_minus_whisper,
---     purple_plus_whisper,
---     purple_minus_star,
---     purple_plus_star,
--- }
+purple_objects = {
+    purple_board,
+    purple_board_frame,
+    purple_bin,
+    purple_rule_book,
+    purple_bowl_ink,
+    purple_bowl_coin,
+    purple_bowl_whisper,
+    purple_bowl_star,
+    purple_minus_ink,
+    purple_plus_ink,
+    purple_minus_coin,
+    purple_plus_coin,
+    purple_minus_whisper,
+    purple_plus_whisper,
+    purple_minus_star,
+    purple_plus_star,
+}
 
--- green_objects = {
---     green_board,
---     green_board_frame,
---     green_bin,
---     green_rule_book,
---     green_bowl_ink,
---     green_bowl_coin,
---     green_bowl_whisper,
---     green_bowl_star,
---     green_minus_ink,
---     green_plus_ink,
---     green_minus_coin,
---     green_plus_coin,
---     green_minus_whisper,
---     green_plus_whisper,
---     green_minus_star,
---     green_plus_star,
--- }
+green_objects = {
+    green_board,
+    green_board_frame,
+    green_bin,
+    green_rule_book,
+    green_bowl_ink,
+    green_bowl_coin,
+    green_bowl_whisper,
+    green_bowl_star,
+    green_minus_ink,
+    green_plus_ink,
+    green_minus_coin,
+    green_plus_coin,
+    green_minus_whisper,
+    green_plus_whisper,
+    green_minus_star,
+    green_plus_star,
+}
 
 
--- red_objects = {
---     red_board,
---     red_board_frame,
---     red_bin,
---     red_rule_book,
---     red_bowl_ink,
---     red_bowl_coin,
---     red_bowl_whisper,
---     red_bowl_star,
---     red_minus_ink,
---     red_plus_ink,
---     red_minus_coin,
---     red_plus_coin,
---     red_minus_whisper,
---     red_plus_whisper,
---     red_minus_star,
---     red_plus_star,
--- }
+red_objects = {
+    red_board,
+    red_board_frame,
+    red_bin,
+    red_rule_book,
+    red_bowl_ink,
+    red_bowl_coin,
+    red_bowl_whisper,
+    red_bowl_star,
+    red_minus_ink,
+    red_plus_ink,
+    red_minus_coin,
+    red_plus_coin,
+    red_minus_whisper,
+    red_plus_whisper,
+    red_minus_star,
+    red_plus_star,
+}
 
--- blue_objects = {
---     blue_board,
---     blue_board_frame,
---     blue_bin,
---     blue_rule_book,
---     blue_bowl_ink,
---     blue_bowl_coin,
---     blue_bowl_whisper,
---     blue_bowl_star,
---     blue_minus_ink,
---     blue_plus_ink,
---     blue_minus_coin,
---     blue_plus_coin,
---     blue_minus_whisper,
---     blue_plus_whisper,
---     blue_minus_star,
---     blue_plus_star,
--- }
+blue_objects = {
+    blue_board,
+    blue_board_frame,
+    blue_bin,
+    blue_rule_book,
+    blue_bowl_ink,
+    blue_bowl_coin,
+    blue_bowl_whisper,
+    blue_bowl_star,
+    blue_minus_ink,
+    blue_plus_ink,
+    blue_minus_coin,
+    blue_plus_coin,
+    blue_minus_whisper,
+    blue_plus_whisper,
+    blue_minus_star,
+    blue_plus_star,
+}
 
 --
 --for var, val in pairs(object_ids) do
@@ -628,6 +656,15 @@ inky_realm_locs = {
     Vector( 0.00, 1, -7.4),
     Vector( 5.33, 1, -7.4),
 }
+
+
+board_exists = {
+    [purple] = false,
+    [green] = false,
+    [red] = false,
+    [blue] = false
+}
+
 
 board_objects = {
     [purple] = purple_objects,
@@ -918,7 +955,8 @@ function dealRefCardsGetNPlayers(players)
  
     for _, color in pairs(players) do
         if color ~= ' ' then
-            board_names[color] = ' '
+            print(color)
+            board_exists[color] = true
             devotee_ref_deck_obj = objects[devotee_ref_deck]
  
             ref_card_object = devotee_ref_deck_obj.takeObject({
@@ -933,11 +971,13 @@ function dealRefCardsGetNPlayers(players)
     end
  
     -- get rid of boards
-    for colour, objects in pairs(board_objects) do
-        if board_name ~= ' ' then
-            for _, obj in pains(objects) do
-                item = objects[obj]
-                vanish(item)
+    for color, exists in pairs(board_exists) do
+
+        
+        if exists == false then
+            for _, obj in pairs(board_objects[color]) do
+                print(obj)
+                vanish(objects[obj])
             end
         end
     end
@@ -952,58 +992,58 @@ function dealRefCardsGetNPlayers(players)
     return n_players
  end
  
- function determineStaringPlayer()
-    -- determine the starting player by the player who received the lowest reference card
-    starting_player = ' '
-    for _, card in pairs({
-        [1] = player_ref_card_A,
-        [2] = player_ref_card_B,
-        [3] = player_ref_card_C,
-        [4] = player_ref_card_D
-    }) do
-        if ref_card_player_map[card] ~= ' ' then
-            starting_player = ref_card_player_map[card]
-            break
-        end
-    end
+--  function determineStaringPlayer()
+--     -- determine the starting player by the player who received the lowest reference card
+--     starting_player = ' '
+--     for _, card in pairs({
+--         [1] = player_ref_card_A,
+--         [2] = player_ref_card_B,
+--         [3] = player_ref_card_C,
+--         [4] = player_ref_card_D
+--     }) do
+--         if ref_card_player_map[card] ~= ' ' then
+--             starting_player = ref_card_player_map[card]
+--             break
+--         end
+--     end
  
-    if starting_player ~= ' ' then
-        Turns.turn_color = starting_player
-    end
-    print("starting player is " .. Turns.turn_color)
- end
+--     if starting_player ~= ' ' then
+--         Turns.turn_color = starting_player
+--     end
+--     print("starting player is " .. Turns.turn_color)
+--  end
  
 
  
- function deal_ref_hand()
-    devotee_deck_obj = objects[devotee_deck]
-    for ref_card, player in pairs(ref_card_player_map) do
-        starting_deck = starting_deck_map[ref_card]
-        deck_object = objects[starting_deck]
+--  function deal_ref_hand()
+--     devotee_deck_obj = objects[devotee_deck]
+--     for ref_card, player in pairs(ref_card_player_map) do
+--         starting_deck = starting_deck_map[ref_card]
+--         deck_object = objects[starting_deck]
  
-        if player ~= ' ' then
+--         if player ~= ' ' then
  
-            deck_object.deal(3, player)
-        else
-            devotee_deck_obj.putObject(deck_object)
-        end
-    end
-    devotee_deck_obj.shuffle()
+--             deck_object.deal(3, player)
+--         else
+--             devotee_deck_obj.putObject(deck_object)
+--         end
+--     end
+--     devotee_deck_obj.shuffle()
  
- end
+--  end
  
- function deal_rand_hand(players)
-    devotee_deck_obj = objects[devotee_deck]
-    for _, starting_deck in pairs(starting_deck_map) do
-        starting_deck_object = objects[starting_deck]
-        devotee_deck_obj.putObject(starting_deck_object)
-    end
-    devotee_deck_obj.shuffle()
+--  function deal_rand_hand(players)
+--     devotee_deck_obj = objects[devotee_deck]
+--     for _, starting_deck in pairs(starting_deck_map) do
+--         starting_deck_object = objects[starting_deck]
+--         devotee_deck_obj.putObject(starting_deck_object)
+--     end
+--     devotee_deck_obj.shuffle()
  
-    for i = 1, 5 do
-        for _, player in ipairs(players) do
-            devotee_deck_obj.deal(1, player)
-        end
-    end
+--     for i = 1, 5 do
+--         for _, player in ipairs(players) do
+--             devotee_deck_obj.deal(1, player)
+--         end
+--     end
  
- end
+--  end
