@@ -955,7 +955,6 @@ function dealRefCardsGetNPlayers(players)
  
     for _, color in pairs(players) do
         if color ~= ' ' then
-            print(color)
             board_exists[color] = true
             devotee_ref_deck_obj = objects[devotee_ref_deck]
  
@@ -963,8 +962,11 @@ function dealRefCardsGetNPlayers(players)
                 position = ref_card_locations[color],
                 rotation = ref_card_rotations[color]
             })
+
             -- create a record of which reference card each player received
             ref_card_player_map[card_id_to_var_ref[ref_card_object.guid]] = color
+
+            card_id_to_var_ref[ref_card_object.guid] = " "
             n_players = n_players + 1
         end
  
@@ -976,18 +978,24 @@ function dealRefCardsGetNPlayers(players)
         
         if exists == false then
             for _, obj in pairs(board_objects[color]) do
-                print(obj)
                 vanish(objects[obj])
             end
         end
     end
  
     --get rid of the remaining ref deck cards
-    if getObjectFromGUID(object_ids[devotee_ref_deck]) ~= nil then
-        vanish(objects[devotee_ref_deck])
+    if n_players == 3 then
+        for guid, str_ref in pairs(card_id_to_var_ref) do
+            if str_ref ~= " " then
+                vanish(objects[str_ref])
+            end
+        end
+    end 
+    if n_players <3 then
+        if getObjectFromGUID(object_ids[devotee_ref_deck]) ~= nil then
+            vanish(objects[devotee_ref_deck])
+        end
     end
- 
-    -- what happens if there is one card left ?
  
     return n_players
  end
